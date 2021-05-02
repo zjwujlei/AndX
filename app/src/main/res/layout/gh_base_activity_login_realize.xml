@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gh_base_login_realize_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gh_cm_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gh_base_login_realize_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:src="@drawable/gh_cm_bace_blue" />
+
+    <RelativeLayout
+        android:id="@+id/gh_base_login_realize_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gh_base_login_realize_back"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/gh_base_login_realize_mode_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/gh_base_login_realize_mode_changeto_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gh_cm_padding_12dip"
+                android:text="密码登录"
+                android:textColor="@color/gh_cm_text_color_1"
+                android:textSize="@dimen/gh_cm_font_size_title" />
+
+            <TextView
+                android:id="@+id/gh_base_login_realize_mode_changeto_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gh_cm_padding_5dip"
+                android:padding="@dimen/gh_cm_padding_12dip"
+                android:text="验证码登录"
+                android:textColor="@color/gh_cm_text_color_4"
+                android:textSize="@dimen/gh_cm_font_size_title" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/gh_base_login_realize_mode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gh_base_login_realize_mode_change"
+            android:padding="@dimen/padding_medium">
+
+            <LinearLayout
+                android:id="@+id/gh_base_login_realize_mode_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textColor="@color/gh_cm_text_color_4"
+                    android:textSize="@dimen/gh_cm_font_size_text_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gh_base_login_realize_mode_password_username"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gh_cm_transparent"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/gh_base_login_realize_mode_password_psw"
+                        android:nextFocusUp="@+id/gh_base_login_realize_mode_password_psw"
+                        android:nextFocusLeft="@+id/gh_base_login_realize_mode_password_psw"
+                        android:nextFocusRight="@+id/gh_base_login_realize_mode_password_psw"
+                        android:nextFocusForward="@+id/gh_base_login_realize_mode_password_psw"
+                        android:paddingBottom="@dimen/gh_cm_padding_5dip"
+                        android:paddingTop="@dimen/gh_cm_padding_5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/gh_cm_text_color_1"
+                        android:textSize="@dimen/gh_cm_font_size_title" />
+
+                    <ImageView
+                        android:id="@+id/gh_base_login_realize_mode_password_username_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                        android:paddingRight="@dimen/gh_cm_padding_12dip"
+                        android:src="@drawable/gh_cm_input_content_clean"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/gh_cm_padding_12dip">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gh_cm_text_color_4"/>
+
+                    <View
+                        android:id="@+id/gh_base_login_realize_mode_password_username_unline"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gh_cm_text_color_1"
+                        android:scaleX="0" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="密码"
+                    android:textColor="@color/gh_cm_text_color_4"
+                    android:textSize="@dimen/gh_cm_font_size_text_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gh_base_login_realize_mode_password_psw"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gh_cm_transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingBottom="@dimen/gh_cm_padding_5dip"
+                        android:paddingTop="@dimen/gh_cm_padding_5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/gh_cm_text_color_1"
+                        android:textSize="@dimen/gh_cm_font_size_title" />
+
+                    <ImageView
+                        android:id="@+id/gh_base_login_realize_mode_password_psw_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                        android:paddingRight="@dimen/gh_cm_padding_12dip"
+                        android:src="@drawable/gh_cm_input_content_clean"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/gh_base_login_realize_mode_password_psw_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                        android:paddingRight="@dimen/gh_cm_padding_12dip"
+                        android:src="@drawable/gh_cm_input_password_hint" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/gh_cm_padding_12dip">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gh_cm_text_color_4"/>
+
+                    <View
+                        android:id="@+id/gh_base_login_realize_mode_password_psw_unline"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gh_cm_text_color_1"
+                        android:scaleX="0" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gh_base_login_realize_mode_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textColor="@color/gh_cm_text_color_4"
+                    android:textSize="@dimen/gh_cm_font_size_text_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gh_base_login_realize_mode_verification_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gh_cm_transparent"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/gh_base_login_realize_mode_verification_code"
+                        android:nextFocusUp="@+id/gh_base_login_realize_mode_verification_code"
+                        android:nextFocusLeft="@+id/gh_base_login_realize_mode_verification_code"
+                        android:nextFocusRight="@+id/gh_base_login_realize_mode_verification_code"
+                        android:nextFocusForward="@+id/gh_base_login_realize_mode_verification_code"
+                        android:inputType="phone"
+                        android:paddingBottom="@dimen/gh_cm_padding_5dip"
+                        android:paddingTop="@dimen/gh_cm_padding_5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/gh_cm_text_color_1"
+                        android:textSize="@dimen/gh_cm_font_size_title" />
+
+                    <ImageView
+                        android:id="@+id/gh_base_login_realize_mode_verification_phone_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                        android:paddingRight="@dimen/gh_cm_padding_12dip"
+                        android:src="@drawable/gh_cm_input_content_clean"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/gh_cm_padding_12dip">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gh_cm_text_color_4"/>
+
+                    <View
+                        android:id="@+id/gh_base_login_realize_mode_verification_phone_unline"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gh_cm_text_color_1"
+                        android:scaleX="0" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:text="验证码"
+                    android:textColor="@color/gh_cm_text_color_4"
+                    android:textSize="@dimen/gh_cm_font_size_text_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gh_base_login_realize_mode_verification_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gh_cm_transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/gh_cm_padding_5dip"
+                        android:paddingTop="@dimen/gh_cm_padding_5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/gh_cm_text_color_1"
+                        android:textSize="@dimen/gh_cm_font_size_title" />
+
+                    <ImageView
+                        android:id="@+id/gh_base_login_realize_mode_verification_code_clean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/gh_base_login_realize_mode_verification_code_get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/gh_cm_padding_12dip"
+                        android:paddingRight="@dimen/gh_cm_padding_12dip"
+                        android:text="@string/gh_cm_login_check_code_get"
+                        android:textColor="@color/gh_cm_text_color_blue"
+                        android:textSize="@dimen/gh_cm_font_size_text_1" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/gh_cm_padding_12dip">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gh_cm_text_color_4"/>
+
+                    <View
+                        android:id="@+id/gh_base_login_realize_mode_verification_code_unline"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gh_cm_text_color_1"
+                        android:scaleX="0" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gh_base_login_realize_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gh_base_login_realize_input_layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/gh_cm_padding_12dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gh_base_login_button_height"
+            android:layout_margin="@dimen/padding_medium"
+            android:enabled="false">
+
+            <TextView
+                android:id="@+id/gh_base_login_realize_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/gh_cm_halfround_button_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/gh_cm_login_button_text_login"
+                android:textColor="@color/gh_cm_white"
+                android:textSize="@dimen/gh_cm_font_size_caption_2" />
+
+            <ImageView
+                android:id="@+id/gh_base_login_realize_login_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/gh_cm_padding_3dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/gh_cm_loading_animation"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/gh_base_login_realize_password_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="忘记密码"
+            android:textColor="@color/gh_cm_text_color_2"
+            android:textSize="@dimen/gh_cm_font_size_sub_caption" />
+    </LinearLayout>
+</RelativeLayout>

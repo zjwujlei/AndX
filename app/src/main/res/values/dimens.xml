@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
+    <dimen name="gh_cm_padding_3dip">3dip</dimen>
+    <dimen name="gh_cm_padding_12dip">12dip</dimen>
+    <dimen name="gh_cm_padding_5dip">5dip</dimen>
+    <dimen name="gh_cm_padding_100dip">100dp</dimen>
+
+    <!-- 使用的文字尺寸 -->
+    <dimen name="gh_cm_font_size_title">20sp</dimen>		<!-- ActionBar 主标题文字大小 -->
+    <dimen name="gh_cm_font_size_caption_1">17sp</dimen>	<!-- tableView（Item）文字大小 -->
+    <dimen name="gh_cm_font_size_caption_2">15sp</dimen>	<!-- 大铵钮文字，正文输入文字，顶部铵钮 -->
+    <dimen name="gh_cm_font_size_sub_caption">14sp</dimen><!-- 副标题，说明性文字 -->
+    <dimen name="gh_cm_font_size_text_1">13sp</dimen>		<!-- 灰色底部的说明，小版铵钮内的文字 -->
+    <dimen name="gh_cm_font_size_text_2">12sp</dimen>		<!-- 说明文字 -->
+    <dimen name="gh_cm_font_size_tab_bar">11sp</dimen>	<!-- 说明文字 底部 -->
+    <dimen name="gh_cm_font_size_select">10sp</dimen>
+
+    <dimen name="gh_base_login_button_mergin">38dp</dimen>
+    <dimen name="gh_base_login_button_height">45dp</dimen>
+
+    <dimen name="gh_cm_padding10">10dip</dimen>
+    <dimen name="gh_cm_padding5">5dip</dimen>
+    <dimen name="gh_cm_first_title_font_size">20sp</dimen>
+    <dimen name="gh_cm_second_title_font_size">17sp</dimen>
+</resources>

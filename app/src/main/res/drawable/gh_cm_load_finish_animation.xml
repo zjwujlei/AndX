@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_1"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_2"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_3"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_4"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_5"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_6"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_7"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_8"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_load_finish_9"
+        android:duration="40" />
+</animation-list>

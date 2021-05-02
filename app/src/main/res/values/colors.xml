@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gh_cm_white">#ffffff</color>
+    <color name="gh_cm_text_color_1">#28354c</color>
+    <color name="gh_cm_text_color_2">#83889a</color>
+    <color name="gh_cm_text_color_3">#a6a8b6</color>
+    <color name="gh_cm_text_color_4">#c4c5ce</color>
+    <color name="gh_cm_transparent">#00ffffff</color>
+    <color name="gh_cm_text_color_blue">#3f86ff</color>
+    <color name="gh_cm_button_disable_gray">#D1D3DB</color>
+    <color name="gh_base_login_home_login_text_color">#A6A8B6</color>
+    <color name="gh_base_login_home_agreement_text">#707C93</color>
+    <color name="text_color_1">#28354c</color>
+    <color name="text_color_2">#83889a</color>
+    <color name="text_color_3">#a6a8b6</color>
+    <color name="text_color_4">#c4c5ce</color>
+    <color name="text_color_5">#61687C</color>
+    <color name="TextColorWhite">#ffffff</color>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_1"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_2"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_3"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_4"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_5"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_6"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_7"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_8"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_9"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_10"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_11"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_12"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_13"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_14"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_15"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_16"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_17"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_18"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_19"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_20"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_21"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_22"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_23"
+        android:duration="40" />
+    <item
+        android:drawable="@drawable/gh_cm_login_loding_24"
+        android:duration="40" />
+</animation-list>

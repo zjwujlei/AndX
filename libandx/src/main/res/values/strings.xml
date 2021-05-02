@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LibAndX</string>
+    <item type="id" name="ANDX_ADAPTER_KEY">1001</item>
+</resources>
